@@ -1,0 +1,66 @@
+/* Styles pertaining to Square 1 */
+.square {
+    margin-top: 40px;
+    width: 200px;
+    height: 200px;
+    background: crimson; /* initial state */
+    transform: translateX(0); /* start state */
+    transition: background-color 5s, transform 3s;
+}
+
+.square:hover {
+    background: darkBlue; /* final state */
+    transform: skewX(20deg) translateX(100px);
+}
+
+
+/* Styles pertaining to Square 2 */
+@keyframes example {
+    from { background-color: red; }
+    to   { background-color: yellow; }
+}
+
+@keyframes example1 {
+    0%   { background-color: red; left: 0px; top: 0px; }
+    25%  { background-color: yellow; left: 200px; top: 0px; }
+    50%  { background-color: blue; left: 200px; top: 200px; }
+    75%  { background-color: green; left: 0px; top: 200px; }
+    100% { background-color: red; left:0px; top: 0px; }
+}
+
+.square2 {
+    margin-top: 50px;
+    width: 100px;
+    height: 100px;
+    background: tomato;
+    transition: background 2s linear, transform 3s;
+}
+
+.square2:hover {
+    background: turquoise;
+    transform: rotate(45deg) translateX(200px) translateY(-200px) scale(2) skew(20deg) perspective(35px) translate3d(20px, 30px, 15px);
+}
+
+/* Styles pertaining to Square 3 */
+.square3 {
+    margin-top: 50px;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    position: relative;
+    background-color: aqua;
+}
+
+/* Styles pertaining to Square 4 */
+.square4 {
+    margin-top: 50px;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    position: relative;
+    background-color: mediumVioletRed;
+}
+
+.controlButtons {
+    margin-top: 50px;
+}
